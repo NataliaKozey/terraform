@@ -11,8 +11,8 @@ resource "aws_instance" "ec2" {
     Env = var.instance_env
   }
 }
-resource "aws_key_pair" "devops-key" {
-  key_name = "terraform_ec2_key"
-  public_key = "${file("terraform_ec2_key.pub")}"
-}
+#resource "aws_key_pair" "devops-key" {
+#  key_name = "terraform_ec2_key"
+#  public_key = "${file("terraform_ec2_key.pub")}"
+#}
 
